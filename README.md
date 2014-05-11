@@ -5,8 +5,10 @@
 
 ## Getting Started
 
+![image](http://koolth.com.au/yo-bourbon-neat.jpg)
+
 ###generator-bourbon-neat
-An easy and straight-forward generator to get you up and running with a full web stack using [Bourbon](http://bourbon.io/) and [Neat](http://neat.bourbon.io/). The generator installs Sass, Bourbon and Neat and gives an [HTML5 Boilerplate](http://html5boilerplate.com/) (it also auto generates a useful directory structure for a web project).
+An easy and straight-forward generator to get you up and running with a full web framework using [Bourbon](http://bourbon.io/) and [Neat](http://neat.bourbon.io/). The generator installs Sass, Bourbon and Neat and gives an [HTML5 Boilerplate](http://html5boilerplate.com/) (it also auto generates a useful directory structure for a web project).
 
 ######Optional:
 The generator also gives you options for installing [Normalize.css](http://necolas.github.io/normalize.css/) and [Modernizr](http://modernizr.com/)
@@ -58,4 +60,4 @@ generator-bourbon-neat
 ======================
 
 Yeoman generator for a website using thoughtbot's Bourbon Neat. Options for Normalize and Modernizr! 
->>>>>>> 2418c1b33be06a703fd0b97541fda04a60bb0d1b
+
