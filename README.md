@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # generator-bourbon-neat [![Build Status](https://secure.travis-ci.org/drpuff/generator-bourbon-neat.png?branch=master)](https://travis-ci.org/drpuff/generator-bourbon-neat)
 
 > [Yeoman](http://yeoman.io) generator
@@ -60,3 +61,9 @@ If you'd like to get to know Yeoman better and meet some of his friends, [Grunt]
 ## License
 
 MIT
+=======
+generator-bourbon-neat
+======================
+
+Yeoman generator for a website using thoughtbot's Bourbon Neat. Options for Normalize and Modernizr! 
+>>>>>>> 2418c1b33be06a703fd0b97541fda04a60bb0d1b
