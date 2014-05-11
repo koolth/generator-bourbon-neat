@@ -5,6 +5,14 @@
 
 ## Getting Started
 
+###generator-bourbon-neat
+An easy and straight-forward generator to get you up and running with a full web stack using [Bourbon](http://bourbon.io/) and [Neat](http://neat.bourbon.io/). The generator installs Sass, Bourbon and Neat and gives an [HTML5 Boilerplate](http://html5boilerplate.com/) (it also auto generates a useful directory structure for a web project).
+
+######Optional:
+The generator also gives you options for installing [Normalize.css](http://necolas.github.io/normalize.css/) and [Modernizr](http://modernizr.com/)
+
+Please let us know if you have any difficulties and comments/suggestions.
+
 ### What is Yeoman?
 
 Trick question. It's not a thing. It's this guy:
@@ -23,22 +31,7 @@ $ npm install -g yo
 
 Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
 
-**generator-bourbon-neat** will be available for install very soon via npm (as soon as beta testing is complete). In the meantime, simply clone and npmlink:
-
-```bash
-$ git clone this-repository
-$ cd this-repository-directory
-$ npm link
-```
-This will make the generator available on your machine and you can initiate the generator:
-
-```bash
-$ mkdir new-website-dir
-$ cd new-website-dir
-$ yo bourbon-neat
-```
-
-<!-- To install generator-bourbon-neat from npm, run:
+To install generator-bourbon-neat from npm, run:
 
 ```bash
 $ npm install -g generator-bourbon-neat
@@ -49,7 +42,7 @@ Finally, initiate the generator:
 ```bash
 $ yo bourbon-neat
 ```
- -->
+
 ### Getting To Know Yeoman
 
 Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
