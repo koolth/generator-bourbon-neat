@@ -1,6 +1,6 @@
-# generator-bourbon-neat [![Build Status](https://secure.travis-ci.org/drpuff/generator-bourbon-neat.png?branch=master)](https://travis-ci.org/drpuff/generator-bourbon-neat)
+# Yeoman Bourbon Neat Generator
 
-> [Yeoman](http://yeoman.io) generator
+> [Yeoman](http://yeoman.io) generator for Bourbon Neat.
 
 
 ## Getting Started
