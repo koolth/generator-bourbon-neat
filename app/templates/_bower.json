@@ -1,0 +1,14 @@
+{
+  "name": "<%= _.slugify(appName) %>",
+  "private": true,
+  "version": "0.0.1",
+  "dependencies": {<% if (includeModernizr) { %>
+    "modernizr": "~2.6.2",<% } if (includeNormalize) { %>
+    "normalize-css": "~3.0.1",<% } %>
+    "bourbon": "~4.0.1",
+    "neat": "~1.6.0",
+    "jquery": "~1.11.0"
+  },
+  "devDependencies": {}
+}
+

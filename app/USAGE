@@ -1,0 +1,17 @@
+Description:
+    Creates a new front-end web application based on Bourbon Neat (lightweight, semantic Sass grid).
+
+Options:
+    Normalize: Include Normalize-css (alternative reset)
+    Modernizer: Include Modernizer.js
+
+Example:
+    yo bourbon-neat
+
+    This will create:
+        Gruntfile.js: Configuration for the task runner.
+        bower.json: Front-end packages installed by bower.
+        package.json: Development packages installed by npm.
+
+        app/: Your application files.
+        test/: Unit tests for your application.
