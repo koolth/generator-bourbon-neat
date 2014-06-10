@@ -57,7 +57,7 @@ module.exports = function (grunt) {
             },
             livereload: {
                 options: {
-                    livereload: '<%%= connect.test.options.livereload %>'
+                    livereload: '<%%= connect.options.livereload %>'
                 },
                 files: [
                     '<%%= config.app %>/{,*/}*.html',
@@ -143,7 +143,7 @@ module.exports = function (grunt) {
             all: {
                 options: {
                     run: true,
-                    urls: ['http://<%%= connect.test.options.hostname %>:<%%= connect.test.options.port %>/index.html']
+                    urls: ['http://<%%= connect.options.hostname %>:<%%= connect.test.options.port %>/index.html']
                 }
             }
         },
