@@ -1,6 +1,6 @@
 {
   "name": "generator-bourbon-neat",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Yeoman generator for a website using thoughtbot's Bourbon Neat.",
   "license": "MIT",
   "main": "app/index.js",
@@ -38,14 +38,12 @@
     "development"
   ],
   "dependencies": {
-    "yeoman-generator": "~0.16.0",
-    "chalk": "~0.4.0",
-    "yosay": "^0.1.0"
+    "yo": ">=1.0.0",
+    "yeoman-generator": "^0.18.10",
+    "chalk": "^1.0.0",
+    "yosay": "^1.0.3"
   },
   "devDependencies": {
     "mocha": "*"
-  },
-  "peerDependencies": {
-    "yo": ">=1.0.0"
   }
 }

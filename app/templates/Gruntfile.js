@@ -408,7 +408,6 @@ module.exports = function (grunt) {
         'autoprefixer',
         'concat',
         'cssmin',
-        'uglify',
         'copy:dist',<% if (includeModernizr) { %>
         'modernizr',<% } %>
         'rev',
