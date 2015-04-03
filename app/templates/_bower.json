@@ -5,7 +5,7 @@
   "dependencies": {<% if (includeModernizr) { %>
     "modernizr": "~2.8.3",<% } if (includeNormalize) { %>
     "normalize-css": "~3.0.3",<% } %>
-    "neat": "~1.7.2", //correct version of Bourbon will be automatically added (as a co-dependency of Neat)
+    "neat": "~1.7.2",
     "jquery": "~1.11.2"
   },
   "devDependencies": {}
