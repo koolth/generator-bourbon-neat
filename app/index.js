@@ -5,17 +5,12 @@ var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
 var chalk = require('chalk');
 
-
-var BourbonNeatGenerator = yeoman.generators.Base.extend({
-  init: function () {
+module.exports = yeoman.generators.Base.extend({
+  initializing: function () {
     this.pkg = require('../package.json');
-
-    this.on('end', function () {
-        this.installDependencies();
-    });
   },
 
-  askFor: function () {
+  prompting: function () {
     var done = this.async();
 
     // Have Yeoman greet the user.
@@ -23,17 +18,17 @@ var BourbonNeatGenerator = yeoman.generators.Base.extend({
     if (!this.options['skip-welcome-message']) {
       this.log(yosay('koolth is proud to give you the marvellous Bourbon-Neat web app generator!'));
       this.log(chalk.red(
-        '\nOut of the box I include HTML5 Boilerplate, Bourbon, Neat, Sass, jQuery, and a ' +
+        '\nI\'ll give you HTML5 Boilerplate, Bourbon, Neat, Sass, jQuery, and a ' +
         'Gruntfile.js to build your app.'
       ));
       this.log(chalk.green(
-        'I\'ll also give you the option of Normalise-css and Modernizr.js!!\n'
+        'You\'ll also have the option to use Normalise-css and Modernizr.js :)\n'
       ));
     }
 
     var prompts = [{
       name: 'appName',
-      message: 'What\'s the name of your website?',
+      message: 'What\'s the name/title of your website?',
       default: 'Neat Website'
     },{
       name: 'appDescription',
@@ -66,36 +61,40 @@ var BourbonNeatGenerator = yeoman.generators.Base.extend({
     }.bind(this));
   },
 
-  scaffoldDirectories: function(){
-    this.mkdir('app');
-    this.mkdir('app/sass');
-    this.mkdir('app/scripts');
-    this.mkdir('app/styles');
-    this.mkdir('app/styles/fonts');
-    this.mkdir('app/images');
+  writing: {
+    scaffoldDirectories: function(){
+      this.mkdir('app');
+      this.mkdir('app/sass');
+      this.mkdir('app/scripts');
+      this.mkdir('app/styles');
+      this.mkdir('app/styles/fonts');
+      this.mkdir('app/images');
+    },
+
+    app: function () {
+      this.template('index.html', 'app/index.html');
+      this.template('404.html', 'app/404.html');
+      this.template('_package.json', 'package.json');
+      this.template('_bower.json', 'bower.json');
+      this.template('Gruntfile.js', 'Gruntfile.js');
+
+      this.copy('main.scss', 'app/sass/main.scss');
+      this.copy('favicon.ico', 'app/favicon.ico');
+      this.copy('htaccess', 'app/.htaccess');
+      this.copy('robots.txt', 'app/robots.txt');
+    },
+
+    projectfiles: function () {
+      this.copy('editorconfig', '.editorconfig');
+      this.copy('jshintrc', '.jshintrc');
+      this.copy('gitignore', '.gitignore');
+      this.copy('gitattributes', '.gitattributes');
+    }
   },
 
-  app: function () {
-    this.template('index.html', 'app/index.html');
-    this.template('404.html', 'app/404.html');
-    this.template('_package.json', 'package.json');
-    this.template('_bower.json', 'bower.json');
-    this.template('Gruntfile.js', 'Gruntfile.js');
-
-    this.copy('main.scss', 'app/sass/main.scss');
-    this.copy('favicon.ico', 'app/favicon.ico');
-    this.copy('htaccess', 'app/.htaccess');
-    this.copy('robots.txt', 'app/robots.txt');
-  },
-
-  projectfiles: function () {
-    this.copy('editorconfig', '.editorconfig');
-    this.copy('jshintrc', '.jshintrc');
-    this.copy('gitignore', '.gitignore');
-    this.copy('gitattributes', '.gitattributes');
+  install: function () {
+    this.installDependencies({
+      skipInstall: this.options['skip-install']
+    });
   }
-
-
 });
-
-module.exports = BourbonNeatGenerator;
