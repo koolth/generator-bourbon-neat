@@ -1,3 +1,6 @@
+'''Please note that this generator was originally a cut-down version of a more comprehensive workflow that we used internally within koolth. Over the last year or so we've gradually updated our workflow to a more npm-centric process (i.e., removing grunt). This means we're no longer actively maintaining this repo - however, it will still give you a really good base to get a bourbon/neat HTML project up and running.'''
+'''Feel free to keep adding issues along with any solutions to help others out.'''
+
 # Yeoman Bourbon Neat Generator
 
 > [Yeoman](http://yeoman.io) generator for Bourbon Neat.
